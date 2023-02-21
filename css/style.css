@@ -1,1 +1,132 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+@media screan and (max-width: 1170px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  color: #1476b8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1470b8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #b81414;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Playfair Display";
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/Playfair Display Bold.eot");
+  src: url("../fonts/Playfair Display Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Playfair Display Bold.woff2") format("woff2");
+  src: url("../fonts/Playfair Display Bold.woff") format("woff");
+  src: url("../fonts/Playfair Display Bold.svg#Playfair Display Bold") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/Playfair Display Bold.eot");
+  src: url("../fonts/Playfair Display Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Playfair Display Bold.woff2") format("woff2");
+  src: url("../fonts/Playfair Display Bold.woff") format("woff");
+  src: url("../fonts/Playfair Display Bold.svg#Playfair Display Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Prata";
+  src: url("../fonts/Prata Regular.eot");
+  src: url("../fonts/Prata Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Prata Regular.woff2") format("woff2");
+  src: url("../fonts/Prata Regular.woff") format("woff");
+  src: url("../fonts/Prata Regular.svg#Prata Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2074;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto Bold.eot");
+  src: url("../fonts/Roboto Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto Bold.woff2") format("woff2");
+  src: url("../fonts/Roboto Bold.woff") format("woff");
+  src: url("../fonts/Roboto Bold.svg#Roboto Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.eot");
+  src: url("../fonts/Roboto.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto.woff2") format("woff2");
+  src: url("../fonts/Roboto.woff") format("woff");
+  src: url("../fonts/Roboto.svg#Roboto") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("Roboto Medium.eot");
+  src: url("Roboto Medium.eot?#iefix") format("embedded-opentype");
+  src: url("Roboto Medium.woff2") format("woff2");
+  src: url("Roboto Medium.woff") format("woff");
+  src: url("Roboto Medium.svg#Roboto Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("Roboto Light.eot");
+  src: url("Roboto Light.eot?#iefix") format("embedded-opentype");
+  src: url("Roboto Light.woff2") format("woff2");
+  src: url("Roboto Light.woff") format("woff");
+  src: url("Roboto Light.svg#Roboto Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}/*# sourceMappingURL=style.css.map */
