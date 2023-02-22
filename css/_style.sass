@@ -1,27 +1,38 @@
 :root
     box-sizing: border-box
-    font-size: calc(1vw + .6em)
-    @media screan and (max-width: 1170px)
-        font-size: 16px
+    font-size: calc(1vw + 1em)
 *,
 *::after,
 *::before
     box-sizing: inherit
 body
     margin: 0
-    font-family: Helvetica, Arial, sans-serif
+    font-family: 'Roboto', sans-serif
 a:link
-    color: #1476b8
-    font-weight: bold
     text-decoration: none
-a:visited
-    color: #1470b8
-a:hover
-    text-decoration: underline
-a:active
-    color: #b81414
+ul
+    list-style: none
+    padding-left: 0
 .container
-    max-width: 1170px
+    max-width: 1190px
     margin: 0 auto
-h1
-    font-family:'Playfair Display'
+    padding: 0 .42em
+.logo
+    font-family: 'Playfair Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    letter-spacing: 0.14em
+    color: #555248
+    position: relative
+    margin-left: 23px
+    &::after
+        display: block
+        content: ''
+        width: 20px
+        height: 20px
+        background-image: url('../images/icons/logo_icon.png')
+        position: absolute
+        left: -23px 
+        top: -3px
