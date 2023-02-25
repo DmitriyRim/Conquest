@@ -5,6 +5,11 @@
 *::after,
 *::before
     box-sizing: inherit
+h1,
+h2,
+h3,
+h4
+    margin: 0
 body
     margin: 0
     font-family: 'Roboto', sans-serif
@@ -36,3 +41,34 @@ ul
         position: absolute
         left: -23px 
         top: -3px
+.title
+    font-family:'Playfair Display'
+    font-weight: 400
+    color: #1B1A17
+.btn
+    font-weight: 500
+    font-size: .41rem
+    line-height: 14px
+    letter-spacing: 0.04em
+    padding: 2em 3.2em
+    text-transform: uppercase
+    transition: backgroun .4s
+    &:hover
+        background: #000
+.dash__after,
+.dash__before
+    position: relative
+.dash__after::after,
+.dash__before::before
+    display: inline-block
+    position: absolute
+    content: ''
+    width: 3em
+    height: 1px
+    background-color: #1B1A17
+.dash__after::after
+    top: 0.5em
+    right: -4.3em
+.dash__before::before
+    bottom: 0.7em
+    left: -3.8em

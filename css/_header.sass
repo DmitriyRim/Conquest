@@ -1,0 +1,74 @@
+.header
+    background-color: #FDFDFB
+    &__box
+        display: flex
+        background: #FDFDFB url('../images/header_bg.svg') no-repeat center
+        justify-content: space-between
+        background-position-x: 55%
+        background-size: contain
+        align-items: center
+        min-height: 370px
+        @media screen and (max-width: 730px)
+            background-size: 15em
+            background-position-x: right
+            justify-content: center
+    &__text-box
+        padding-left: 2.8em
+        flex-basis: 40%
+        @media screen and (max-width: 730px)
+            flex-basis: 55%
+        @media screen and (max-width: 420px)
+            padding: 0
+            flex-basis: 80%
+            text-align: center
+    &__title
+        font-size: 1.5rem
+        line-height: 1.42
+        margin-bottom: .6em
+        & > span
+            font-size: .67em
+            display: block
+        &::before
+            top: .8em
+            left: -1.4em
+            width: 1.1em
+            @media screen and (max-width: 420px)
+                display: none
+    &__description
+        font-weight: 300
+        font-size: 14px
+        line-height: 21px
+        color: rgba(27, 26, 23, 0.82)
+        margin-bottom: 3.4em
+    &__btn
+        color: #ffffff
+        background: #444240
+    &__banner
+        display: flex
+        justify-content: center
+        flex-basis: 60%
+        padding: 0.5em 0
+        position: relative
+        @media screen and (max-width: 730px)
+            flex-basis: 45%
+        @media screen and (max-width: 420px)
+            display: none
+        & > img
+            width: 57%
+        &-left
+            top: 18%
+            left: 3%
+        &-right
+            bottom: 16%
+            right: 2%
+        &-text
+            display: block
+            position: absolute
+            font-family: 'Prata', serif
+            font-style: normal
+            font-weight: 400
+            font-size: .55rem
+            line-height: 22px
+            color: #1B1A17
+            @media screen and (max-width: 730px)
+                display: none

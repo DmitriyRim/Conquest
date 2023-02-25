@@ -19,6 +19,7 @@
         & > span
             display: block
             height: 16px
+            background-size: contain
         &-search
             width: 16px
             background: url('../images/icons/search_icon.svg') center no-repeat
@@ -41,16 +42,14 @@
             width: 18px
             background: url('../images/icons/basket_icon.svg') center no-repeat
     &__hamburger
-        display: block
+        display: none
         height: 14px
         width: 18px
-        display: flex
         flex-direction: column
         justify-content: space-between
-        @media screen and (min-width: 550px)
-            display: none
+        @media screen and (max-width: 550px)
+            display: flex
         & .line 
-            display: block
             height: 2px
             width: 100%
             border-radius: 10px
@@ -71,12 +70,12 @@
         & > .line3 
             transform: rotate(-45deg)
 .menu
-    display: none
+    display: flex
     justify-content: space-between
     margin: 0
     flex-basis: 36%
-    @media screen and (min-width: 550px)
-        display: flex
+    @media screen and (max-width: 550px)
+        display: none
     & > *+*
         margin-left: 1em
     &__link
