@@ -4,6 +4,8 @@
     align-items: center
     position: relative
     padding: 1.25em 0
+    z-index: 50
+    background-color: #fff
     &__icons
         display: flex
         align-items: center
@@ -87,3 +89,20 @@
         color: #555248
         &:hover
             text-decoration: underline
+    &__mobile
+        position: absolute
+        text-align: center
+        background-color: #fff
+        padding: 10px 0
+        margin: 0
+        z-index: 10
+        right: 0
+        left: 0
+        transition: .3s
+        transform: translateY(-100%)
+        & .menu__link
+            display: block
+            padding: 5px
+    &__open
+        transform: translateY(0)
+        box-shadow: 0 2px 92px 0 rgb(0 0 0 / 7%)

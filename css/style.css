@@ -224,6 +224,8 @@ ul {
   align-items: center;
   position: relative;
   padding: 1.25em 0;
+  z-index: 50;
+  background-color: #fff;
 }
 .nav__icons {
   display: flex;
@@ -334,6 +336,26 @@ ul {
 }
 .menu__link:hover {
   text-decoration: underline;
+}
+.menu__mobile {
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  transition: 0.3s;
+  transform: translateY(-100%);
+}
+.menu__mobile .menu__link {
+  display: block;
+  padding: 5px;
+}
+.menu__open {
+  transform: translateY(0);
+  box-shadow: 0 2px 92px 0 rgba(0, 0, 0, 0.07);
 }
 
 .products {
