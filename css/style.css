@@ -631,4 +631,64 @@ ul {
   width: 60%;
   height: 15.6em;
   background-image: url(../images/photo_3.jpg);
+}
+
+.footer {
+  background-color: #444240;
+  padding: 1.7em 0 1em 0;
+  line-height: 0.55;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 760px) {
+  .footer__box {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer__lists {
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 370px) {
+  .footer__lists {
+    flex-basis: 100%;
+  }
+}
+.footer__list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 1.5em;
+}
+.footer__list-item {
+  margin-bottom: 0.1em;
+}
+.footer__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: border 0.3s;
+}
+.footer__link:hover {
+  border-bottom: 1px solid #fff;
+}
+.footer .logo {
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+}
+.footer .logo::after {
+  background-image: url(../images/icons/logo.png);
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+  top: -7px;
 }/*# sourceMappingURL=style.css.map */
