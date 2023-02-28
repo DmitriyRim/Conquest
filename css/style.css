@@ -338,6 +338,7 @@ ul {
 
 .products {
   padding-top: 2.8em;
+  padding-bottom: 3em;
 }
 .products__title {
   text-align: center;
@@ -415,6 +416,7 @@ ul {
   background: linear-gradient(90deg, rgba(226, 208, 196, 0) 15%, rgb(226, 208, 196) 100%);
   border-radius: 50%;
   padding: 2px;
+  margin-bottom: 0.3em;
 }
 .products__img {
   position: relative;
@@ -441,4 +443,101 @@ ul {
   background: #8B8371;
   vertical-align: middle;
   margin-right: 1.1em;
+}
+
+.banner {
+  position: relative;
+  background: linear-gradient(90deg, #F7F5EF 35%, #FDFDFB 35%);
+  padding-top: 1.8em;
+  overflow: hidden;
+}
+.banner__elipse {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #D4B098;
+}
+.banner__elipse-bg1 {
+  width: 12.3em;
+  height: 12.3em;
+  right: -5em;
+  top: -5em;
+}
+.banner__elipse-bg2 {
+  width: 25em;
+  height: 25em;
+  right: -17.5em;
+  top: 0.5em;
+}
+.banner__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.banner__box > * + * {
+  margin-left: 2em;
+}
+@media screen and (max-width: 620px) {
+  .banner__box > * + * {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  .banner__box {
+    flex-direction: column-reverse;
+  }
+}
+.banner__slider {
+  display: flex;
+  flex-direction: column;
+}
+.banner__slide {
+  flex-basis: 40%;
+  overflow: hidden;
+}
+.banner__slide > img {
+  width: 100%;
+}
+.banner__nav {
+  text-align: right;
+  margin-right: 22%;
+}
+@media screen and (max-width: 620px) {
+  .banner__nav {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+.banner__arrows {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.banner__slider-page {
+  font-family: "Prata";
+  font-weight: 400;
+  color: rgba(27, 26, 23, 0.82);
+  font-size: 0.5rem;
+}
+@media screen and (max-width: 620px) {
+  .banner__text {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+.banner__title {
+  font-size: 1.08rem;
+  margin-bottom: 0.9em;
+}
+.banner__description {
+  font-size: 0.54rem;
+  max-width: 375px;
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+}
+.banner__btn {
+  display: inline-block;
+  background: #D4B098;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
