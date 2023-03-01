@@ -1,0 +1,78 @@
+:root
+    box-sizing: border-box
+    font-size: calc(1vw + 1em)
+*,
+*::after,
+*::before
+    box-sizing: inherit
+h1,
+h2,
+h3,
+h4
+    margin: 0
+body
+    margin: 0
+    font-family: 'Roboto', sans-serif
+a:link
+    text-decoration: none
+ul
+    list-style: none
+    padding-left: 0
+.container
+    max-width: 1190px
+    margin: 0 auto
+    padding: 0 .42em
+.logo
+    font-family: 'Playfair Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    letter-spacing: 0.14em
+    color: #555248
+    position: relative
+    margin-left: 23px
+    &::after
+        display: block
+        content: ''
+        width: 20px
+        height: 20px
+        background-image: url('../images/icons/logo_icon.png')
+        position: absolute
+        left: -23px 
+        top: -3px
+.title
+    font-family:'Playfair Display'
+    font-weight: 400
+    color: #1B1A17
+.btn
+    font-weight: 500
+    font-size: .41rem
+    line-height: 14px
+    letter-spacing: 0.04em
+    padding: 2em 3.2em
+    text-transform: uppercase
+    transition: backgroun .4s
+    &:hover
+        background: #000
+.dash__after,
+.dash__before
+    position: relative
+.dash__after::after,
+.dash__before::before
+    display: inline-block
+    position: absolute
+    content: ''
+    width: 3em
+    height: 1px
+    background-color: #1B1A17
+.dash__after::after
+    top: 0.5em
+    right: -4.3em
+.dash__before::before
+    bottom: 0.7em
+    left: -3.8em
+.links_active
+    transition: color .3s
+    &:hover
+        color: #C4C0B6

@@ -1,0 +1,63 @@
+.news
+    padding: 3em 0 3em 0
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 620px)
+        display: block
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-top: 3em
+        padding-left: 0.3em
+        flex-basis: 46%
+        @media screen and (max-width: 620px)
+            padding: 0
+            text-align: center
+    &__title
+        font-size: 1.08rem
+        margin-bottom: .41em
+    &__description
+        font-size: .54rem
+        max-width: 23.5em
+        line-height: 1.6
+        margin-bottom: 6.7em
+        @media screen and (max-width: 620px)
+            margin: 0 auto
+            margin-bottom: 2em
+    &__links
+        & > *+*
+            margin-left: 0.4em
+        @media screen and (max-width: 620px)
+            margin-bottom: 2em
+    &__gallery
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-basis: 54%
+        height: 15.6em
+        @media screen and (max-width: 620px)
+            margin-left: 0.5em
+    &__gallery-box
+        display: flex
+        flex-direction: column
+        width: 40%
+        height: 100%
+        margin-right: 0.5em
+        & > .news__img
+            height: 100%
+            width: 100%
+        & > *+*
+            margin-top: 0.5em
+    &__img
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        &-1
+            background-image: url(../images/photo_1.jpg)
+        &-2
+            background-image: url(../images/photo_2.jpg)
+        &-3
+            width: 60%
+            height: 15.6em
+            background-image: url(../images/photo_3.jpg)
